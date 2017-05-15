@@ -1,0 +1,26 @@
+{
+  "name": "no-js-bem",
+  "version": "1.0.0",
+  "description": "The repository to contain components that generated with only css follow BEM format",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonado13/no-js-bem.git"
+  },
+  "author": "ng.nhat.tuan@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leonado13/no-js-bem/issues"
+  },
+  "homepage": "https://github.com/leonado13/no-js-bem#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
