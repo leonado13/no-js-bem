@@ -6,12 +6,12 @@ module.exports = function (grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: 'sass',
+                    cwd: 'elements',
                     src: ['*.scss'],
                     dest: 'css',
                     ext: '.css'
                 },{
-                    'dist/style.css': 'dist/style.scss'
+                    'style.css': 'style.scss'
                 }]
             }
         },

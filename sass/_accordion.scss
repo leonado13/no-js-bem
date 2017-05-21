@@ -1,0 +1,74 @@
+/* Shared for all accordion types */
+.accordion {
+    // COMMON PROPERTY
+    & [type=radio],
+    & [type=checkbox] {
+        display: none;
+    }
+    &__content {
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        transition: all .5s;
+        height: 0;
+        border: 0;
+    }
+
+    // DEFAULT STYLE
+    // Wrapper
+    border: $accordion-border;
+    border-radius: $accordion-radius;
+    background: $accordion-background;
+    padding: $accordion-padding;
+    & > * {
+        overflow: hidden;
+        border-left: $accordion-border;
+        border-right: $accordion-border;
+
+        & > label {
+            // Title
+            display: block;
+            cursor: pointer;
+            background: $accordion-label-background;
+            color: $accordion-label-text;
+            padding: $accordion-label-padding;
+            border-top: $accordion-border;
+        }
+        & > .accordion__content {
+            // Content
+            overflow: auto; // Scroll when there is too much content
+            background: $accordion-content-background;
+            color: $accordion-content-text;
+            padding: $accordion-content-padding;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+    & > *:first-child {
+        border-top: $accordion-border;
+        border-top-left-radius: $accordion-radius;
+        border-top-right-radius: $accordion-radius;
+
+        > label {
+            border-top: 0;
+        }
+    }
+    & > *:last-child {
+        border-bottom: $accordion-border;
+        border-bottom-left-radius: $accordion-radius;
+        border-bottom-right-radius: $accordion-radius;
+    }
+
+    // ACTIVE STATE
+    & > * > [type=radio]:checked ~ label,
+    & > * > [type=checkbox]:checked ~ label {
+        background: $accordion-label-active-background;
+        color: $accordion-label-active-text;
+    }
+
+    & > * > [type=radio]:checked ~ label ~ &__content,
+    & > * > [type=checkbox]:checked ~ label ~ &__content {
+        border-top: $accordion-border;
+        padding: $accordion-content-padding;
+        height: $accordion-height;
+    }
+}
