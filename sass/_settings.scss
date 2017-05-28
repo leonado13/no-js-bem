@@ -10,12 +10,13 @@ $dark-cyan: #00cdcd;
 
 // Common settings
 $primary-color: $cyan;
+$global-radius: 5px;
 
 // Accordion
 $accordion-background: $white;
 $accordion-border: 1px solid $grey;
 $accordion-padding: 0.25em;
-$accordion-radius: 5px;
+$accordion-radius: $global-radius;
 $accordion-height: 200px;
 
 $accordion-label-background: $light-grey;
@@ -28,3 +29,11 @@ $accordion-label-active-text: $dark-grey;
 $accordion-content-background: $white;
 $accordion-content-text: $dark-grey;
 $accordion-content-padding: $accordion-label-padding;
+
+// Tabs
+$max-tab-count: 5;
+$tab-border-radius: $global-radius;
+$tab-background: $white;
+$tab-label-background: $light-grey;
+$tab-label-padding: 1em 0.5em;
+$tab-content-padding: 0.5em;
