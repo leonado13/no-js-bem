@@ -6,9 +6,7 @@
         display: none;
     }
     &__content {
-        -webkit-transition: all .5s;
-        -moz-transition: all .5s;
-        transition: all .5s;
+        @include transition(all 0.5s);
         height: 0;
         border: 0;
     }
@@ -32,6 +30,9 @@
             color: $accordion-label-text;
             padding: $accordion-label-padding;
             border-top: $accordion-border;
+            &:hover {
+                background: lighten($accordion-label-active-background, 5%);
+            }
         }
         & > .accordion__content {
             // Content

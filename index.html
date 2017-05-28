@@ -6,63 +6,143 @@
 </head>
 <body>
 <!-- ACCORDION -->
-<div class="accordion__wrapper">
-    <h2 class="text-align-center">Single open</h2>
-    <div class="accordion">
-        <div>
-            <input id="accordion-1" name="accordion-1" type="radio">
-            <label for="accordion-1">Label 1</label>
-            <div class="accordion__content">
-                <h3>This is the first accordion content</h3>
-                <p>Sample content</p>
+<section id="accordion-section">
+    <h1 class="text-align-center">Accordion</h1>
+    <div class="accordion__wrapper">
+        <h2 class="text-align-center">Single open</h2>
+        <div class="accordion">
+            <div>
+                <input id="accordion-1" name="accordion-1" type="radio">
+                <label for="accordion-1">Label 1</label>
+                <div class="accordion__content">
+                    <h3>This is the first accordion content</h3>
+                    <p>Sample content</p>
+                </div>
+            </div>
+            <div>
+                <input id="accordion-2" name="accordion-1" type="radio">
+                <label for="accordion-2">Label 2</label>
+                <div class="accordion__content">
+                    <h3>This is the accordion content at middle</h3>
+                    <p>Sample content</p>
+                </div>
+            </div>
+            <div>
+                <input id="accordion-3" name="accordion-1" type="radio">
+                <label for="accordion-3">Label 3</label>
+                <div class="accordion__content">
+                    <h3>This is the last accordion content</h3>
+                    <p>Sample content</p>
+                </div>
             </div>
         </div>
-        <div>
-            <input id="accordion-2" name="accordion-1" type="radio">
-            <label for="accordion-2">Label 2</label>
-            <div class="accordion__content">
-                <h3>This is the accordion content at middle</h3>
-                <p>Sample content</p>
+        <h2 class="text-align-center">Multiple open</h2>
+        <div class="accordion">
+            <div>
+                <input id="accordion-2-1" type="checkbox">
+                <label for="accordion-2-1">Label 1</label>
+                <div class="accordion__content">
+                    <h3>This is the first accordion content</h3>
+                    <p>Sample content</p>
+                </div>
             </div>
-        </div>
-        <div>
-            <input id="accordion-3" name="accordion-1" type="radio">
-            <label for="accordion-3">Label 3</label>
-            <div class="accordion__content">
-                <h3>This is the last accordion content</h3>
-                <p>Sample content</p>
+            <div>
+                <input id="accordion-2-2" type="checkbox">
+                <label for="accordion-2-2">Label 2</label>
+                <div class="accordion__content">
+                    <h3>This is the accordion content at middle</h3>
+                    <p>Sample content</p>
+                </div>
+            </div>
+            <div>
+                <input id="accordion-2-3" type="checkbox">
+                <label for="accordion-2-3">Label 3</label>
+                <div class="accordion__content">
+                    <h3>This is the last accordion content</h3>
+                    <p>Sample content</p>
+                </div>
             </div>
         </div>
     </div>
-    <h2 class="text-align-center">Multiple open</h2>
-    <div class="accordion">
-        <div>
-            <input id="accordion-2-1" type="checkbox">
-            <label for="accordion-2-1">Label 1</label>
-            <div class="accordion__content">
-                <h3>This is the first accordion content</h3>
-                <p>Sample content</p>
-            </div>
-        </div>
-        <div>
-            <input id="accordion-2-2" type="checkbox">
-            <label for="accordion-2-2">Label 2</label>
-            <div class="accordion__content">
-                <h3>This is the accordion content at middle</h3>
-                <p>Sample content</p>
-            </div>
-        </div>
-        <div>
-            <input id="accordion-2-3" type="checkbox">
-            <label for="accordion-2-3">Label 3</label>
-            <div class="accordion__content">
-                <h3>This is the last accordion content</h3>
-                <p>Sample content</p>
-            </div>
-        </div>
-    </div>
-</div>
+    <a class="next-btn" href="#tab-section">Next</a>
+</section>
 <!-- END ACCORDION-->
-
+<!-- TAB -->
+<section id="tab-section">
+    <h1 class="text-align-center">Tabs</h1>
+    <div class="tab__wrapper">
+        <h2 class="text-align-center">Simple Tabs</h2>
+        <div class="tab">
+            <input type="radio" id="tab-1-1" name="tab-1" checked/>
+            <label for="tab-1-1">Apple</label>
+            <input type="radio" id="tab-1-2" name="tab-1"/>
+            <label for="tab-1-2">Microsoft</label>
+            <input type="radio" id="tab-1-3" name="tab-1">
+            <label for="tab-1-3">Google</label>
+            <div class="tab__content">
+                <p>Apple Inc. is an American multinational technology company headquartered in Cupertino, California that designs, develops, and sells consumer electronics, computer software, and online services.</p>
+            </div>
+            <div class="tab__content">
+                <h3>Microsoft Services</h3>
+                <p>Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington, that develops, manufactures, licenses, supports and sells computer software, consumer electronics and personal computers and services.</p>
+            </div>
+            <div class="tab__content">
+                <h3>Long Section</h3>
+                <p>Google is an American multinational technology company specializing in Internet-related services and products. These include online advertising technologies, search, cloud computing, software, and hardware.</p>
+                <p>Google is an American multinational technology company specializing in Internet-related services and products. These include online advertising technologies, search, cloud computing, software, and hardware. Google was founded in 1996 by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University, in California. Together, they own about 14 percent of its shares, and control 56 percent of the stockholder voting power through supervoting stock. They incorporated Google as a privately held company on September 4, 1998. An initial public offering (IPO) took place on August 19, 2004, and Google moved to its new headquarters in Mountain View, California, nicknamed the Googleplex. In August 2015, Google announced plans to reorganize its various interests as a conglomerate called Alphabet Inc. Google, Alphabet's leading subsidiary, will continue to be the umbrella company for Alphabet's Internet interests. Upon completion of the restructure, Sundar Pichai became CEO of Google, replacing Larry Page, who became CEO of Alphabet.</p>
+                <p>Rapid growth since incorporation has triggered a chain of products, acquisitions, and partnerships beyond Google's core search engine (Google Search). It offers services designed for work and productivity (Google Docs, Sheets and Slides), email (Gmail/Inbox), scheduling and time management (Google Calendar), cloud storage (Google Drive), social networking (Google+), instant messaging and video chat (Google Allo/Duo/Hangouts), language translation (Google Translate), mapping and turn-by-turn navigation (Google Maps), video sharing (YouTube), notetaking (Google Keep), and photo organizing and editing (Google Photos). The company leads the development of the Android mobile operating system, the Google Chrome web browser, and Chrome OS, a lightweight operating system based on the Chrome browser. Google has moved increasingly into hardware; from 2010 to 2015, it partnered with major electronics manufacturers in the production of its Nexus devices, and in October 2016, it released multiple hardware products (including the Google Pixel smartphone, Home smart speaker, Wifi mesh wireless router, and Daydream View virtual reality headset). The new hardware chief, Rick Osterloh, stated: "a lot of the innovation that we want to do now ends up requiring controlling the end-to-end user experience". Google has also experimented with becoming an Internet carrier. In February 2010, it announced Google Fiber, a fiber-optic infrastructure that was installed in Kansas City; in April 2015, it launched Project Fi in the United States, combining Wi-Fi and cellular networks from different providers; and in 2016, it announced the Google Station initiative to make public Wi-Fi around the world, which had already been deployed in India.</p>
+            </div>
+        </div>
+    </div>
+    <div class="tab__wrapper">
+        <h2 class="text-align-center">Tabs with more than limit (over tabs will be hides)</h2>
+        <div class="tab">
+            <input type="radio" id="tab-2-1" name="tab-2" checked/>
+            <label for="tab-2-1">Lime</label>
+            <input type="radio" id="tab-2-2" name="tab-2"/>
+            <label for="tab-2-2">Lemon</label>
+            <input type="radio" id="tab-2-3" name="tab-2">
+            <label for="tab-2-3">Orange</label>
+            <input type="radio" id="tab-2-4" name="tab-2">
+            <label for="tab-2-4">Grapefruit</label>
+            <input type="radio" id="tab-2-5" name="tab-2">
+            <label for="tab-2-5">Tangerines</label>
+            <input type="radio" id="tab-2-6" name="tab-2">
+            <label for="tab-2-6">Kumquat</label>
+            <input type="radio" id="tab-2-7" name="tab-2">
+            <label for="tab-2-7">Passion fruit</label>
+            <div class="tab__content">
+                <p>A lime (from French lime, from Arabic līma, from Persian līmū, "lemon") is a hybrid citrus fruit, which is typically round, lime green, 3–6 centimetres (1.2–2.4 in) in diameter, and containing acidic juice vesicles.</p>
+                <p>There are several species of citrus trees whose fruits are called limes, including the Key lime (Citrus aurantifolia), Persian lime, kaffir lime, and desert lime. Limes are an excellent source of vitamin C, and are often used to accent the flavours of foods and beverages. They are grown year-round. Plants with fruit called "limes" have diverse genetic origins; limes do not form a monophyletic group.</p>
+            </div>
+            <div class="tab__content">
+                <p>The lemon, Citrus limon (L.) Osbeck, is a species of small evergreen tree in the flowering plant family Rutaceae, native to Asia.</p>
+                <p>The tree's ellipsoidal yellow fruit is used for culinary and non-culinary purposes throughout the world, primarily for its juice, which has both culinary and cleaning uses. The pulp and rind (zest) are also used in cooking and baking. The juice of the lemon is about 5% to 6% citric acid, which gives a sour taste. The distinctive sour taste of lemon juice makes it a key ingredient in drinks and foods such as lemonade and lemon meringue pie.</p>
+            </div>
+            <div class="tab__content">
+                <p>The orange is the fruit of the citrus species Citrus × sinensis in the family Rutaceae. It is also called sweet orange, to distinguish it from the related Citrus × aurantium, referred to as bitter orange. The sweet orange reproduces asexually (apomixis through nucellar embryony); varieties of sweet orange arise through mutations.</p>
+                <p>The orange is a hybrid between pomelo (Citrus maxima) and mandarin (Citrus reticulata). It has genes that are ~25% pomelo and ~75% mandarin; however, it is not a simple backcrossed BC1 hybrid, but hybridized over multiple generations. The chloroplast genes, and therefore the maternal line, seem to be pomelo. The sweet orange has had its full genome sequenced. Earlier estimates of the percentage of pomelo genes varying from ~50% to 6% have been reported.</p>
+            </div>
+            <div class="tab__content">
+                <p>The grapefruit (Citrus × paradisi) is a subtropical citrus tree known for its sour to semi-sweet somewhat bitter fruit . Grapefruit is a hybrid originating in Barbados as an accidental cross between two introduced species, sweet orange (C. sinensis) and pomelo or shaddock (C. maxima), both of which were introduced from Asia in the seventeenth century. When found, it was named the “forbidden fruit”; and it has also been misidentified with the pomelo.</p>
+                <p>The grapefruit's name alludes to clusters of the fruit on the tree, which often appear similar to grapes.</p>
+            </div>
+            <div class="tab__content">
+                <p>The tangerine (Citrus tangerina) is an orange-colored citrus fruit that is closely related to, or possibly a type of, mandarin orange (Citrus reticulata).</p>
+                <p>The name was first used for fruit coming from Tangier, Morocco, described as a mandarin variety. Under the Tanaka classification system, Citrus tangerina is considered a separate species. Under the Swingle system, tangerines are considered to be a group of mandarin (C. reticulata) varieties. While tangerines genetically resemble mandarins, the genetics are still not thoroughly studied. The term is currently applied to any reddish-orange mandarin[citation needed] (and, in some jurisdictions, mandarin-like hybrids, including some tangors), but the term "tangerine" may yet acquire a definite genetic meaning.</p>
+                <p>Tangerines are smaller and less rounded than common oranges. The taste is considered less sour, as well as sweeter and stronger, than that of an orange. A ripe tangerine is firm to slightly soft, heavy for its size[citation needed], and pebbly-skinned with no deep grooves, as well as orange in color. The peel is very thin, with very little bitter white mesocarp, which makes them usually easier to peel and to split into segments. All of these traits are shared by mandarins generally.</p>
+            </div>
+            <div class="tab__content">
+                <p>Kumquats (or cumquats in Australian English; UK /ˈkʌmkwɒt/; US /ˈkʌmˌkwɑːt/ or /ˈkʌmkwɔːt/) (Citrus japonica) are a group of small fruit-bearing trees in the flowering plant family Rutaceae. They were previously classified as forming the now historical genus Fortunella, or placed within Citrus sensu lato.</p>
+                <p>The edible fruit closely resembles that of the orange (Citrus sinensis), but it is much smaller, being approximately the size and shape of a large olive. Kumquat is a fairly cold-hardy citrus.</p>
+            </div>
+            <div class="tab__content">
+                <p>Passiflora edulis is a vine species of passion flower that is native to southern Brazil through Paraguay to northern Argentina. Its common names include passion fruit or passionfruit (English), maracuyá or parcha (Spanish), grenadille or fruit de la passion (French), maracujá (Portuguese) and lilikoʻi (Hawaiian).</p>
+                <p>It is cultivated commercially in tropical and subtropical areas for its sweet, seedy fruit. The passion fruit is a pepo, a type of berry, round to oval, either yellow or dark purple at maturity, with a soft to firm, juicy interior filled with numerous seeds. The fruit is both eaten and juiced; passion fruit juice is often added to other fruit juices to enhance aroma.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END TAB -->
 </body>
 </html>

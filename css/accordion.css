@@ -7,9 +7,10 @@
   .accordion [type=radio], .accordion [type=checkbox] {
     display: none; }
   .accordion__content {
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    transition: all .5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
     height: 0;
     border: 0; }
   .accordion > * {
@@ -23,6 +24,8 @@
       color: #666666;
       padding: 0.25em 0.5em;
       border-top: 1px solid #c0c0c0; }
+      .accordion > * > label:hover {
+        background: #09ffff; }
     .accordion > * > .accordion__content {
       overflow: auto;
       background: #ffffff;
