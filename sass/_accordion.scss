@@ -6,7 +6,7 @@
         display: none;
     }
     &__content {
-        @include transition(all 0.5s);
+        transition: all 0.5s;
         height: 0;
         border: 0;
     }

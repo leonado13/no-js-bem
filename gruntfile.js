@@ -15,6 +15,18 @@ module.exports = function (grunt) {
                 }]
             }
         },
+        autoprefixer: {
+            options: {
+                cascade: false,
+                map: true
+            },
+            dist: {
+                src: [
+                    'css/*.css',
+                    'style.css'
+                ]
+            }
+        },
         watch: {
             css: {
                 files: '**/*.scss',
@@ -26,8 +38,9 @@ module.exports = function (grunt) {
 // Load the plugins
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-autoprefixer');
 
 // Default task(s).
-    grunt.registerTask('default', ['sass']);
+    grunt.registerTask('default', ['sass', 'autoprefixer']);
 }
 ;

@@ -1,12 +1,5 @@
-@mixin transition($transition...) {
-    -webkit-transition: $transition;
-    -moz-transition: $transition;
-    -o-transition: $transition;
-    transition: $transition;
-}
-
 @mixin animated-hover-shadow($color) {
-    @include transition(0.3s box-shadow ease);
+    transition: 0.3s box-shadow ease;
     box-shadow: 0 0 1px $color, 0 0 2px lighten($color, 5%);
     &:hover {
         box-shadow: -1px 3px 8px $color, -1px 3px 10px lighten($color, 5%);

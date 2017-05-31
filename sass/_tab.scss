@@ -46,7 +46,7 @@
             padding: $tab-content-padding;
             opacity: 1;
             transform: translateY(0px);
-            @include transition(0.5s opacity ease-in, 0.8s transform ease);
+            transition: 0.5s opacity ease-in, 0.8s transform ease;
         }
         & > label:nth-of-type(#{$i}) {
             display: inline-block;

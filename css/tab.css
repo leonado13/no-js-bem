@@ -2,12 +2,12 @@
   width: 100%;
   overflow: hidden;
   border-radius: 5px;
-  -webkit-transition: 0.3s box-shadow ease;
-  -moz-transition: 0.3s box-shadow ease;
-  -o-transition: 0.3s box-shadow ease;
   transition: 0.3s box-shadow ease;
   box-shadow: 0 0 1px #c0c0c0, 0 0 2px #cdcdcd;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
   .tab > [type="radio"] {
     display: none; }
@@ -18,10 +18,13 @@
     padding: 0;
     border: none;
     opacity: 0;
+    -webkit-transform: translateY(-1px);
     transform: translateY(-1px); }
   .tab:hover {
     box-shadow: -1px 3px 8px #c0c0c0, -1px 3px 10px #cdcdcd; }
   .tab > label {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
     flex-grow: 1;
     display: none;
     text-align: center;
@@ -36,10 +39,9 @@
     height: auto;
     padding: 0.5em;
     opacity: 1;
+    -webkit-transform: translateY(0px);
     transform: translateY(0px);
-    -webkit-transition: 0.5s opacity ease-in, 0.8s transform ease;
-    -moz-transition: 0.5s opacity ease-in, 0.8s transform ease;
-    -o-transition: 0.5s opacity ease-in, 0.8s transform ease;
+    transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
     transition: 0.5s opacity ease-in, 0.8s transform ease; }
   .tab > label:nth-of-type(1) {
     display: inline-block; }
@@ -47,10 +49,9 @@
     height: auto;
     padding: 0.5em;
     opacity: 1;
+    -webkit-transform: translateY(0px);
     transform: translateY(0px);
-    -webkit-transition: 0.5s opacity ease-in, 0.8s transform ease;
-    -moz-transition: 0.5s opacity ease-in, 0.8s transform ease;
-    -o-transition: 0.5s opacity ease-in, 0.8s transform ease;
+    transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
     transition: 0.5s opacity ease-in, 0.8s transform ease; }
   .tab > label:nth-of-type(2) {
     display: inline-block; }
@@ -58,10 +59,9 @@
     height: auto;
     padding: 0.5em;
     opacity: 1;
+    -webkit-transform: translateY(0px);
     transform: translateY(0px);
-    -webkit-transition: 0.5s opacity ease-in, 0.8s transform ease;
-    -moz-transition: 0.5s opacity ease-in, 0.8s transform ease;
-    -o-transition: 0.5s opacity ease-in, 0.8s transform ease;
+    transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
     transition: 0.5s opacity ease-in, 0.8s transform ease; }
   .tab > label:nth-of-type(3) {
     display: inline-block; }
@@ -69,10 +69,9 @@
     height: auto;
     padding: 0.5em;
     opacity: 1;
+    -webkit-transform: translateY(0px);
     transform: translateY(0px);
-    -webkit-transition: 0.5s opacity ease-in, 0.8s transform ease;
-    -moz-transition: 0.5s opacity ease-in, 0.8s transform ease;
-    -o-transition: 0.5s opacity ease-in, 0.8s transform ease;
+    transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
     transition: 0.5s opacity ease-in, 0.8s transform ease; }
   .tab > label:nth-of-type(4) {
     display: inline-block; }
@@ -80,10 +79,9 @@
     height: auto;
     padding: 0.5em;
     opacity: 1;
+    -webkit-transform: translateY(0px);
     transform: translateY(0px);
-    -webkit-transition: 0.5s opacity ease-in, 0.8s transform ease;
-    -moz-transition: 0.5s opacity ease-in, 0.8s transform ease;
-    -o-transition: 0.5s opacity ease-in, 0.8s transform ease;
+    transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
     transition: 0.5s opacity ease-in, 0.8s transform ease; }
   .tab > label:nth-of-type(5) {
     display: inline-block; }
